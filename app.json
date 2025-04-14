@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "Save Me",
+    "slug": "save-me",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#DE0F3F"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app needs access to your location to share it with emergency services.",
+        "NSCameraUsageDescription": "This app uses the camera for video calls with medical professionals.",
+        "NSMicrophoneUsageDescription": "This app uses the microphone for voice calls with medical professionals."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#DE0F3F"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA",
+        "RECORD_AUDIO",
+        "CALL_PHONE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Save Me to use your location to share with emergency services."
+        }
+      ]
+    ],
+    "description": "An emergency medical assistance app that provides instant instructions, emergency calling, location sharing, verified medical information, and doctor connections."
+  }
+}
