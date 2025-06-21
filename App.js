@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, I18nManager } from 'react-native';
 import AppNavigator from './src/navigation/AppNavigator';
 
-// Enable RTL for Arabic language
+//ar language
 I18nManager.allowRTL(true);
 I18nManager.forceRTL(true);
 
